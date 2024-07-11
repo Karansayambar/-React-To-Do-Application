@@ -3,6 +3,7 @@ import { Button } from '@mui/material'
 import { Add, ViewAgenda } from '@mui/icons-material'
 import TaskList from '../TaskList'
 import { motion } from "framer-motion";
+import image from "../../../public/icons8-todo-list-100.png"
 
 
 const Sidebar = ({handleOpenTaskForm, handleOpenDetailedTaskList}) => {
@@ -10,7 +11,7 @@ const Sidebar = ({handleOpenTaskForm, handleOpenDetailedTaskList}) => {
   return (
     <div className='sidebar'>
         <div className='head'>
-            <motion.img
+          <motion.img
           initial={{ y: -8 }}
           animate={{ y: 8 }}
           transition={{
@@ -19,7 +20,7 @@ const Sidebar = ({handleOpenTaskForm, handleOpenDetailedTaskList}) => {
             duration: 2,
             repeat: Infinity
           }}
-          src='public/icons8-todo-list-100.png'
+          src={image}
           alt='Todo List'
         />
             <h3><i className='logo-font'>TO-DO</i></h3>

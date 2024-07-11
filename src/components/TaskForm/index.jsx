@@ -8,6 +8,8 @@ import { TimePicker } from '@mui/x-date-pickers/TimePicker';
 import "./style.css";
 import { useDispatch } from 'react-redux';
 import { addTask, editTask } from '../redux/action';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const TaskForm = ({ onClose, taskToEdit }) => {
   const dispatch = useDispatch();
@@ -55,6 +57,7 @@ const TaskForm = ({ onClose, taskToEdit }) => {
     if (taskToEdit) {
       // If taskToEdit exists, dispatch editTask action
       dispatch(editTask(taskToEdit.id, updatedTask));
+      toast.success('Task updated successfully!');
     } else {
       // Otherwise, dispatch addTask action
       const newTask = {
@@ -62,6 +65,7 @@ const TaskForm = ({ onClose, taskToEdit }) => {
         ...updatedTask,
       };
       dispatch(addTask(newTask));
+      toast.success('Task added successfully!');
     }
 
     // Reset form fields and close the form

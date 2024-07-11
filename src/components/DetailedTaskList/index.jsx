@@ -4,6 +4,7 @@ import { IconButton, Button } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
 import TaskForm from '../TaskForm';
 import { deleteTask, editTask } from '../redux/action';
+import image from "../../../public/Pngtree-blue.png"
 import "./style.css";
 
 const DetailedTaskList = () => {
@@ -76,7 +77,7 @@ const DetailedTaskList = () => {
         <div className="background-image">
           <h3>Welcome to Task Manager!</h3>
           <p>Please click "Show Task List" to view your tasks.</p>
-          <img src='public\Pngtree-blue.png' className='img-1'/>
+          <img src={image}/>
         </div>
       )}
     </div>

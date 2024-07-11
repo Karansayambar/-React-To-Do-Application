@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 10;
+  height: 100vh;
+  background-color: #686d76;
+}
+
+.task-icon {
+  height: 500px;
+  width: 500px;
+  opacity: 0.4;
+}
+
+@media only screen and (max-width: 320px), (max-width: 500px) {
+  .task-icon {
+    height: 300px;
+    width: 250px;
+  }
+}

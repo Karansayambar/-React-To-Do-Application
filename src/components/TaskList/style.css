@@ -1,0 +1,52 @@
+.list-container-task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  max-height: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  margin: 0%;
+  padding: 0%;
+}
+ul::-webkit-scrollbar {
+  display: none;
+}
+.task-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start !important;
+  list-style: none;
+  padding: 5px;
+  background-color: rgba(128, 128, 128, 0.388);
+  color: white;
+  border-radius: 10px;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pending {
+  border: 2px solid blue;
+}
+.completed {
+  border: 2px solid green;
+}
+
+@media only screen and (max-width: 320px), (max-width: 500px) {
+  ul {
+    width: 250px !important;
+  }
+  .task-item {
+    padding: 10px;
+  }
+}

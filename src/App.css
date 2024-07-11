@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+.main-container {
+  display: flex;
+  color: #eeeeee !important;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 320px), (max-width: 500px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

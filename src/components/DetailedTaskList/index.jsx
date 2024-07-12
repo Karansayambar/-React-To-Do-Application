@@ -77,7 +77,7 @@ const DetailedTaskList = () => {
         <div className="background-image">
           <h3>Welcome to Task Manager!</h3>
           <p>Please click "Show Task List" to view your tasks.</p>
-          <img src={image}/>
+          <img src={image} className='img-1'/>
         </div>
       )}
     </div>
